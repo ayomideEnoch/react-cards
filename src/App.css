@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+html, body {
+     height: 100%;
+     width: 100%;
+     color: #000000 !important;
+     background-color: #F4F4F4 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Cards .DashboardGraph .DashboardList .PausedAccounts {
+  background-color: #FFFFFF;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DashboardTitle {
+  font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .Dashboard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+} */
+.DashboardControl {
+  border-collapse: separate;
+  border-spacing: 5px;
+  display: table;
+  margin-left: 140px;
+  margin-top: 50px;
+}
+.DashboardShow {
+  color: #1D1D1D4D;
+  display: table-cell;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  vertical-align: middle;
+}
+span {
+  font-size: 2em;
+}
+.DashboardYear {
+  color: #1D1D1D99;
+  display: table-cell;
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.fa-caret-down {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.YearSelector {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.card {
+  margin: 5px 5px;
+  width: 13rem;
+  z-index: 10;
+}
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+.card-title {
+  color: #1D1D1D99;
+}
+.card-text {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card-number {
+  color: #000000;
+}
+.card-metric {
+  color: #27C601;
+  font-size: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.col-md-4:last-child p {
+  color: #FC0000 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-ellipsis-v {
+  color: #1D1D1D99;
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.icons {
+  bottom: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+ .circle-icon {
+  background: #0000001E;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px;
+}
+.square-icon {
+  background: #00318714;
+  padding: 5px;
+}
+.RevenueGraph .DashboardGraph .DashboardList:hover {
+  order: 1px solid #FFFFFF;
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  transition: all .1s ease-in;
+}
+/* .DashboardMetric:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.RevenueGraph:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.DashboardGraph:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.DashboardList:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+} */
+/* Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+ .CardContainer {
+   grid-template-columns: 1fr;
+ }  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .CardContainer {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .CardContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .CardContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}  */
