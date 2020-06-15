@@ -10,6 +10,7 @@ class  RevenueGraph extends Component {
                 datasets: [
                     {
                         label: 'Total Number',
+                        color: '#003187',
                         data: [
                             90000,
                             200000,
@@ -31,8 +32,9 @@ class  RevenueGraph extends Component {
     }
     static defaultProps = {
         displayTitle: true,
-        displayLegend: true,
-        legendPosition: 'right'
+        // displayLegend: true,
+        // legendPosition: 'right',
+        positionTitle: 'top'
     }
 
     render() { 
@@ -44,12 +46,13 @@ class  RevenueGraph extends Component {
                         title: {
                             display: this.props.displayTitle,
                             text: 'Revenue',
-                            fontSize: 10
+                            fontSize: 16,
+                            position: this.props.positionTitle
                         },
                         legend: {
                             display: this.props.displayLegend,
                             position: this.props.legendPosition
-                        }                                        
+                        }                                     
                     }}
                 />
             </div>

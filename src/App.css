@@ -4,7 +4,7 @@ html, body {
      color: #000000 !important;
      background-color: #F4F4F4 !important;
 }
-.Cards .DashboardGraph .DashboardList .PausedAccounts {
+.Cards .DashboardGraph .DashboardList .PausedAccounts .RevenueGraph .DashboardGraph .DashboardList {
   background-color: #FFFFFF;
 }
 .DashboardTitle {
@@ -49,6 +49,7 @@ span {
   z-index: 1;
 }
 .card {
+  /* border-radius: 30px/20px; */
   margin: 5px 5px;
   width: 13rem;
   z-index: 10;
@@ -102,14 +103,46 @@ span {
   background: #00318714;
   padding: 5px;
 }
-.RevenueGraph .DashboardGraph .DashboardList:hover {
+.RevenueGraph {
+  background-color: #FFFFFF;
+  border-radius: 30px/20px;
+  height: 130%;
+  width: 130%;
+  cursor: pointer;
+  /* display: table-cell;
+  vertical-align: middle; */
+}
+.RevenueGraph:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+.DashboardGraph {
+  background-color: #FFFFFF;
+  border-radius: 30px/20px;
+  cursor: pointer;
+}
+.DashboardGraph:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+/*.RevenueGraph .DashboardGraph .DashboardList:hover {
   order: 1px solid #FFFFFF;
   box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
   text-decoration: none;
   color: #444;
   position: relative;
   transition: all .1s ease-in;
+} 
+.RevenueGraph .DashboardGraph:hover {
+  cursor: pointer;
 }
+/* .RevenueGraph .DashboardGraph .DashboardList {
+  margin: 5px 5px;
+  width: 13rem;
+  z-index: 10;
+}
+.RevenueGraph .DashboardGraph .DashboardList:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+} */
 /* .DashboardMetric:hover {
   top: -2px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
